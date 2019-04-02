@@ -1,0 +1,30 @@
+if __name__=="__main__":
+
+    import tools
+    from sprinklerspi import SprinklersPi
+
+
+    sp = SprinklersPi('localhost')
+
+    # ## Print all zones
+    # for z in sp.get_zones():
+    #     print("{} en:{} pu:{} st:{}".format(z['name'], z['enabled'], z['pump'], z['state']))
+
+    # ## Get state
+    # print(sp.get_state())
+
+    # ## Test url zone name encoder 
+    # print(tools.get_url_zone_name(15))
+
+    # ## Example for on zone switch 
+    # print(sp.switch_zone(1,1))
+
+
+    print(sp.get_state())
+    print(sp.switch_all_schedules(0))
+    print(sp.get_state())
+    print(sp.switch_all_schedules(1))
+    print(sp.get_state())
+
+
+    print(sp.get_schedule(0))
