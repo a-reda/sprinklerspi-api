@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sprinklerspi-api",
-    version="0.0.1",
+    version="0.0.2",
     author="Reda",
     author_email="reda@aissaoui.org",
     description="Python library to interface with Sprinkler PI",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/a-reda/sprinklerspi-api",
     packages=setuptools.find_packages(),
     install_requires=[
         'requests'
